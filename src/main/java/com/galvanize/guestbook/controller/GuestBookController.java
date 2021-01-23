@@ -21,4 +21,9 @@ public class GuestBookController {
         guestBookList.add(guestBook);
         return guestBook;
     }
+
+    @GetMapping("/comments")
+    public List<GuestBook> getGuestBookEntry(){
+        return this.guestBookList;
+    }
 }
