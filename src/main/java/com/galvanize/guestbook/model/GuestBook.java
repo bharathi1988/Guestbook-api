@@ -6,7 +6,12 @@ public class GuestBook {
     private String comments;
     private String id;
 
-    public GuestBook(String guestName, String comments) {
+    
+    public GuestBook() {
+		super();
+	}
+
+	public GuestBook(String guestName, String comments) {
         this.guestName = guestName;
         this.comments = comments;
     }
